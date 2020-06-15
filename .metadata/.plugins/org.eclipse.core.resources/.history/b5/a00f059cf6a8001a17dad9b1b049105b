@@ -1,0 +1,17 @@
+package service;
+
+import model.Funcionario;
+
+public class ControleDeBonificacoes {
+	
+	private double somaBonificacoes;
+	
+	public void somabonificacoes(Funcionario f) {
+		 
+		somaBonificacoes = f.getbonificacao();
+	}
+
+	public double getSomabonificacoes() {
+		return somaBonificacoes;
+	}
+}

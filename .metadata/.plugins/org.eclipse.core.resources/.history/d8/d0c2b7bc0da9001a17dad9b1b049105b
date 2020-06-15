@@ -1,0 +1,9 @@
+package model;
+
+public class SecretariaAgencia extends Secretaria{
+	
+	@Override
+	public double getbonificacao() {
+		return this.salario * 0.03;
+	}
+}

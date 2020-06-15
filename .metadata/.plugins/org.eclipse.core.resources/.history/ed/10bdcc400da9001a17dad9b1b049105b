@@ -1,0 +1,9 @@
+package model;
+
+public class Gerente extends Presidente{
+	
+	@Override
+	public double getBoificacoes() {
+		return this.salario * 0.15;
+	}	
+}

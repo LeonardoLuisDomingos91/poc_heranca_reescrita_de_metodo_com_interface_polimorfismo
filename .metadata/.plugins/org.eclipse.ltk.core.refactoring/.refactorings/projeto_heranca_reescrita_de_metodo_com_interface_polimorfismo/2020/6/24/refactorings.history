@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;service.ContoleDeAutenticacao&apos; to &apos;ControleDeAutenticacao&apos;&#x0A;- Original project: &apos;projeto_heranca_reescrita_de_metodo_com_interface_polimorfismo&apos;&#x0A;- Original element: &apos;service.ContoleDeAutenticacao&apos;&#x0A;- Renamed element: &apos;service.ControleDeAutenticacao&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ContoleDeAutenticacao&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;service{ContoleDeAutenticacao.java[ContoleDeAutenticacao" matchStrategy="1" name="ControleDeAutenticacao" qualified="false" references="true" similarDeclarations="false" stamp="1591569255247" textual="false" version="1.0"/>
+</session>

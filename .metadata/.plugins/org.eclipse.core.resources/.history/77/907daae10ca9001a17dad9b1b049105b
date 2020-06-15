@@ -1,0 +1,21 @@
+package model;
+
+public class Gerente extends Presidente{
+	
+	@Override
+	public double getBoificacoes() {
+		return this.salario * 0.15;
+	}
+	
+	@Override
+	public void autentica(int senha) {
+		
+		if(this.senha == senha)
+			System.out.println("Liberado");
+		else {
+			System.out.println("Não permitido");
+		}
+	}
+
+	
+}

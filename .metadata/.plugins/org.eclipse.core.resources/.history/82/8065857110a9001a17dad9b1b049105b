@@ -1,0 +1,71 @@
+package view;
+
+import model.Diretor;
+import model.Gerente;
+import model.Presidente;
+import model.SecretariaAdministrativa;
+import model.SecretariaAgencia;
+import service.ControleDeAutenticacao;
+import service.ControleDeBonificacoes;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Presidente presidente = new Presidente();
+		presidente.setNome("Leticia");
+		presidente.setSalario(5000.0);
+		presidente.setSenha(111);
+		System.out.println("Presidente: " + "Bonificação " + presidente.getBonificacoes());
+		
+		ControleDeAutenticacao  controleDeAunteticacao = new ControleDeAutenticacao();
+		controleDeAunteticacao.setSenha(222);
+		controleDeAunteticacao.atenticador(presidente);
+		System.out.println("-----------------------");
+		
+		Gerente gerente = new Gerente();
+		gerente.setNome("Luis");
+		gerente.setSalario(1000.0);
+		gerente.setSenha(222);
+		System.out.println("Gerente: " + "Bonificação " + gerente.getBonificacoes());
+		
+		ControleDeAutenticacao  controleDeAunteticacao = new ControleDeAutenticacao();
+		controleDeAunteticacao.setSenha(222);
+		controleDeAunteticacao.atenticador(gerente);
+		System.out.println("-----------------------");
+		
+		Diretor diretor = new Diretor();
+		diretor.setNome("Leonardo");
+		diretor.setSalario(1000.0);
+		System.out.println("Diretor: " + "Bonificação " + diretor.getBonificacoes());
+		System.out.println("-----------------------");
+		
+		SecretariaAdministrativa secretariaAdministrativa = new SecretariaAdministrativa();
+		secretariaAdministrativa.setNome("Ana");
+		secretariaAdministrativa.setSalario(3000.0);
+		secretariaAdministrativa.getBonificacoes();
+		System.out.println("Secretaria Administrativa: " + "Bonificação " + secretariaAdministrativa.getBonificacoes());
+		System.out.println("-----------------------");
+		
+		SecretariaAgencia secretariaAgencia = new SecretariaAgencia();
+		secretariaAgencia.setNome("patricia");
+		secretariaAgencia.setSalario(3000.0);
+		secretariaAgencia.getBonificacoes();
+		System.out.println("Secretaria Agencia: " + "Bonificação " + secretariaAgencia.getBonificacoes());
+		
+		System.out.println("-----------------------");
+		
+		ControleDeBonificacoes controleDeBonificacoes = new ControleDeBonificacoes();
+		
+		controleDeBonificacoes.somaBonificacoes(presidente);
+		controleDeBonificacoes.somaBonificacoes(gerente);
+		controleDeBonificacoes.somaBonificacoes(diretor);
+		controleDeBonificacoes.somaBonificacoes(secretariaAdministrativa);
+		controleDeBonificacoes.somaBonificacoes(secretariaAgencia);
+		
+		System.out.println("Soma das bonificações q a empresa gastou com todos os funcionarios");
+		System.out.println(controleDeBonificacoes.getTotalDeBonificacoes());
+
+	}
+
+}

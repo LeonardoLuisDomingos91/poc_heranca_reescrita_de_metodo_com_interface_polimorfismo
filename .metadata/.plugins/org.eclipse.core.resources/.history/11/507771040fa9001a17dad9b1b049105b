@@ -1,0 +1,13 @@
+package service;
+
+import model.Autenticavel;
+
+public class ContoleDeAutenticacao {
+	
+	private int senha;
+	
+	public void atenticador(Autenticavel a) {
+		a.autentica(senha);
+	}
+
+}

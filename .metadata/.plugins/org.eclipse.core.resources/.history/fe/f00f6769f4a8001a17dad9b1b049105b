@@ -1,0 +1,10 @@
+package model;
+
+public abstract class Secretaria extends Gerente{
+	
+	@Override
+	public double getbonificacao() {
+		return this.salario * 0.3;
+	}
+
+}

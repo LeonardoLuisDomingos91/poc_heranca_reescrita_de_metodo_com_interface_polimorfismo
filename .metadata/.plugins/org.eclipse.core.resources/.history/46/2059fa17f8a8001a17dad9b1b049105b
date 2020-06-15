@@ -1,0 +1,32 @@
+package model;
+
+public class Gerente extends Funcionario implements Autenticavel{
+	
+	private int senha;
+
+	@Override
+	public double getBoificacoes() {
+		return this.salario * 0.15;
+	}
+
+	@Override
+	public void autentica(int senha) {
+		
+		if(this.senha == senha)
+			System.out.println("Liberado");
+		else {
+			System.out.println("Não permitido");
+		}
+	}
+
+	public int getSenha() {
+		return senha;
+	}
+
+	public void setSenha(int senha) {
+		this.senha = senha;
+	}
+	
+	
+
+}

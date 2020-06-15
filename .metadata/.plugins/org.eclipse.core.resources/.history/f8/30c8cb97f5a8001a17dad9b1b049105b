@@ -1,0 +1,12 @@
+package model;
+
+public class Gerente extends Funcionario{
+	
+	private int senha;
+
+	@Override
+	public double getbonificacao() {
+		return this.salario * 0.15;
+	}
+
+}

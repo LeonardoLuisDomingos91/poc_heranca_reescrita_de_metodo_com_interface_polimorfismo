@@ -1,0 +1,12 @@
+package model;
+
+public class Presidente extends Funcionario{
+	
+	protected int senha;
+
+	@Override
+	public double getBoificacoes() {
+		return this.salario * 0.20;
+	}
+
+}

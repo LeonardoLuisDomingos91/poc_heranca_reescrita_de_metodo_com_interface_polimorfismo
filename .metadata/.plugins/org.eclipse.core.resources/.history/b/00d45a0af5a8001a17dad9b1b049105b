@@ -1,0 +1,10 @@
+package service;
+
+public class ControleDeBonificacoes {
+	
+	private double somabonificacoes;
+
+	public double getSomabonificacoes() {
+		return somabonificacoes;
+	}
+}
